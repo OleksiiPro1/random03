@@ -1,11 +1,51 @@
-# Node.js random03
+1st try:
+const color1 = '#4c56aa';
 
-When a user enters node index.js in the command line, a block of approximately 31x9 # characters colored with a random color (using hex code, e.g. #ff0000) should be generated.
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('#### ####'));
+console.log(chalk.hex(`${color1}`).bold(`#### ${color1} ####`));
+console.log(chalk.hex(`${color1}`).bold('#### ####'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
 
+2st try:
 import chalk from 'chalk';
+import randomColor from 'randomColor';
 
-console.log(chalk.red('##########'));
-const
+const color = randomColor();
 randomColor();
 
-const messablock
+const messageblock = ` ###############################
+###############################
+###############################
+###############################
+
+####
+
+#### ${color}
+
+####
+
+###############################
+###############################
+###############################
+###############################`;
+
+console.log(chalk.hex(`${color}`).bold(`${messageblock}`));
+
+const color1 = '#4c56aa';
+
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('#### ####'));
+console.log(chalk.hex(`${color1}`).bold(`#### ${color1} ####`));
+console.log(chalk.hex(`${color1}`).bold('#### ####'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
+console.log(chalk.hex(`${color1}`).bold('###############################'));
